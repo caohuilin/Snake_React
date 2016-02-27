@@ -1,0 +1,169 @@
+/*
+    * Busy 收集 整理
+ */
+/*雅虎（YUI 3）reset*/
+/*Normalize.css*/
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+img {
+  border: none;
+}
+input,
+select,
+textarea {
+  outline: none;
+  border: none;
+  background: none;
+}
+textarea {
+  resize: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background: #bbada0;
+  width: 100%;
+  height: 100%;
+}
+.snake_game {
+  outline: none;
+}
+.snake_game header {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 600;
+  color: #faf8ef;
+  height: 30px;
+  line-height: 30px;
+}
+.snake_game .left {
+  display: block;
+  float: left;
+  display: inline;
+  width: 20%;
+  margin: 50px 30px;
+}
+@media screen and (max-width: 980px) {
+  .snake_game .left {
+    display: none;
+  }
+}
+.snake_game .left .title {
+  color: #152077;
+  font-size: 20px;
+  margin: 20px auto;
+  width: 80%;
+}
+.snake_game .left .rules {
+  font-size: 14px;
+  line-height: 30px;
+  color: #FB1801;
+}
+.snake_game .game_body {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  background: rgba(238, 228, 218, 0.35);
+  position: relative;
+}
+.snake_game .game_body .cell {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  float: left;
+  display: inline;
+}
+.snake_game .game_body .food_cell {
+  background: #0b3;
+  border-radius: 7.5px;
+  box-shadow: 0 0 2.5px #0b3;
+}
+.snake_game .game_body .snake_cell {
+  background: #39c;
+  box-shadow: 0 0 2.5px #39c;
+}
+.snake_game .game_body .bullet_cell {
+  background: #F5EF06;
+  box-shadow: 0 0 2.5px #F5EF06;
+  border-radius: 7.5px;
+}
+.snake_game .game_body .monster_cell {
+  background: #FB1801;
+  box-shadow: 0 0 2.5px #FB1801;
+  border-radius: 7.5px;
+}
+.snake_game .game_over {
+  z-index: 2;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  font-size: 25px;
+  background: rgba(215, 212, 202, 0.56);
+}
+.snake_game > button {
+  z-index: 2;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4px;
+  font-size: 20px;
+  background: #d7d4ca;
+  border: none;
+  border-radius: 3px;
+}
+.snake_game .reStart {
+  z-index: 2;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  font-size: 18px;
+  color: #FB1801;
+  background: rgba(215, 212, 202, 0.9);
+}
+@media screen and (max-width: 980px) {
+  .snake_game .reStart {
+    padding: 2%;
+  }
+}
+.snake_game .reStart button {
+  background: rgba(238, 228, 218, 0.35);
+  padding: 3px;
+  border-radius: 2px;
+  border: 1px solid rgba(238, 228, 218, 0.4);
+  margin: 36px 13% 15px;
+}
+@media screen and (max-width: 980px) {
+  .snake_game .reStart button {
+    margin: 20px 13% 10px;
+  }
+}
+.snake_game footer {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: 0 auto;
+}
+.snake_game footer button {
+  flex: 1;
+  margin: 15px 5%;
+  padding: 3px;
+  border: 1px solid rgba(238, 228, 218, 0.4);
+  background: rgba(238, 228, 218, 0.35);
+  border-radius: 2px;
+}
+.snake_game footer button:focus {
+  border: 1px solid reba(238, 228, 218, 0, 7);
+}
