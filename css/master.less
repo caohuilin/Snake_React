@@ -96,6 +96,8 @@ body{
     border-radius: 3px;
   }
   .reStart{
+    width:300px;
+    height: 100px;
     z-index: 2;
     position: absolute;
     top:40%;
@@ -108,16 +110,22 @@ body{
     @media screen and (max-width: 980px){
       padding: 2%;
     }
-    button{
-      background: rgba(238, 228, 218, 0.35);
-      padding:3px;
-      border-radius: 2px;
-      border:1px solid rgba(238,228,218,0.4);
-      margin:36px 13% 15px;
-      @media screen and (max-width: 980px){
-        margin: 20px 13% 10px;
+    .con{
+      padding:26%;
+    }
+    .ReButton{
+      display: flex;
+      margin-top: 30px;
+      button{
+        background: rgba(238, 228, 218, 0.35);
+        padding:3px;
+        border-radius: 2px;
+        border:1px solid rgba(238,228,218,0.4);
+        flex:1;
+        margin:30px;
       }
     }
+
   }
   footer{
     display: flex;

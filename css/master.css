@@ -123,6 +123,8 @@ body {
   border-radius: 3px;
 }
 .snake_game .reStart {
+  width: 300px;
+  height: 100px;
   z-index: 2;
   position: absolute;
   top: 40%;
@@ -138,17 +140,20 @@ body {
     padding: 2%;
   }
 }
-.snake_game .reStart button {
+.snake_game .reStart .con {
+  padding: 26%;
+}
+.snake_game .reStart .ReButton {
+  display: flex;
+  margin-top: 30px;
+}
+.snake_game .reStart .ReButton button {
   background: rgba(238, 228, 218, 0.35);
   padding: 3px;
   border-radius: 2px;
   border: 1px solid rgba(238, 228, 218, 0.4);
-  margin: 36px 13% 15px;
-}
-@media screen and (max-width: 980px) {
-  .snake_game .reStart button {
-    margin: 20px 13% 10px;
-  }
+  flex: 1;
+  margin: 30px;
 }
 .snake_game footer {
   display: flex;
